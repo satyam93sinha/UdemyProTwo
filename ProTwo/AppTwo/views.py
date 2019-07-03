@@ -8,3 +8,6 @@ def index(request):
 def index_template(request):
     my_dict = {"response":"Help Page index_template"}
     return render(request, "ProTwo/index.html", context=my_dict)
+
+def static_files(request):
+    return render(request, "ProTwo/static_img_display.html", {"caption":"Django Reinhardt:"})
